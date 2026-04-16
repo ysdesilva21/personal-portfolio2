@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex carter | AI Engineer</title>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top bg-white custom-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">ALEX<span>.</span></a>
+                <div class="d-flex align-items-center  gap-4 order-lg-last">
+                    <button class="navbar-toggler border-0 p-2 shadow-none"id="topHireBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+                <!-- The Separate Popup (Offcanvas) -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title fw-bold " id="offcanvasNavbarLabel">ALEX.</h5>
+                        <!-- Modern Close Button -->
+                        <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+                            <li class="nav-item"><a class="nav-link mobile-nav-link" href="#features">Hero</a></li>
+                            <li class="nav-item"><a class="nav-link mobile-nav-link" href="#work">About</a></li>
+                            <li class="nav-item"><a class="nav-link mobile-nav-link" href="#pricing">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link mobile-nav-link" href="#testimonials">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link mobile-nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+     <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>AI Engineer Building Practical Machine Learning Systems</span>
+                    </div>
+                    <h1>
+                        Build <span class="gradient-text">scalable AI products</span> that actually work.
+                    </h1>
+                    <p>I create production-ready web applications and AI systems that solve real problems. Fast delivery, clean code, measurable results.</p>
+                    <div class="hero-cta">
+                        <button class="btn-primary-custom" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                        <button class="btn-secondary-custom" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual">
+                    <div class="code-box">
+                        <div><span class="comment">// Building the future, one line at a time</span></div>
+                        <div><span class="keyword">const</span> app = <span class="keyword">new</span> <span class="string">"AI-Powered"</span>()</div>
+                        <div>&nbsp;</div>
+                        <div>app.<span class="string">features</span> = [</div>
+                        <div>&nbsp;&nbsp;<span class="string">"Fast Delivery"</span>,</div>
+                        <div>&nbsp;&nbsp;<span class="string">"Clean Code"</span>,</div>
+                        <div>&nbsp;&nbsp;<span class="string">"Scalable Architecture"</span>,</div>
+                        <div>&nbsp;&nbsp;<span class="string">"AI Integration"</span></div>
+                        <div>]</div>
+                        <div>&nbsp;</div>
+                        <div>app.<span class="string">deploy</span>() <span class="comment">// → Production Ready</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
